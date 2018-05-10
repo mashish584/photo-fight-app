@@ -1,0 +1,358 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway|Titan+One');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+/*
+  Overwrite default css
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  background: #f5f5f5;
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 75px;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+input {
+  border: 1px solid #dcdcdc;
+  background: none;
+  width: 100%;
+  padding: 10px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+button {
+  background: #222;
+  color: #fff;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+
+.notification-flash{
+  position: fixed;
+  bottom: 70px;
+  background: yellow;
+  width: 400px;
+  padding: 25px;
+  color: #222;
+  right: 50px;
+  font-size: 12px;
+  transform: translateY(50px);
+  box-shadow: 0 0 25px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: transform 200ms ease-in,opacity 100ms ease-in;
+}
+
+.notification-flash.show{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/*
+    Site NavBar Styles
+*/
+
+.site-nav {
+  background: #fff;
+  border-bottom: #dcdcdc;
+  max-height: 55px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.site-nav .brand {
+  font-family: 'Titan One', cursive;
+  margin-right: auto;
+}
+
+.site-nav a:not(:first-child) {
+  margin: 0 15px;
+}
+
+/* Section-Content styles */
+
+form {
+  width: 300px;
+  margin: 100px auto;
+  background: #fff;
+  padding: 50px 25px;
+}
+
+form img {
+  width: 100px;
+  height: 100px;
+  margin: 25px auto;
+  display: block;
+}
+
+form input {
+  margin: 5px 0;
+}
+
+.btn-submit, .btn-start, .btn-end {
+  background: rgb(235, 235, 3);
+  cursor: pointer;
+  margin: 5px 0;
+  border-radius: 50px;
+}
+
+.fight-section {
+  width: 700px;
+  margin: 100px auto;
+  display: flex;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.fight-section h3 {
+  width: 100%;
+  text-align: center;
+}
+
+.fight-section--image {
+  margin: 0 10px;
+  position: relative;
+  flex: 1;
+}
+
+.fight-section--image img {
+  height: 300px;
+}
+
+.btn-vote {
+  background: rgb(49, 40, 213);
+  width: 150px;
+  margin: 10px auto;
+  display: block;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.votes {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 5px 15px;
+  right: 5%;
+  top: 5%;
+}
+
+.user-profile {
+  width: 100%;
+  padding: 25px;
+  display: flex;
+}
+
+.user-card {
+  border: 1px solid #dcdcdc;
+  flex-basis: 300px;
+  background: #fff;
+  padding: 10px;
+  margin-right: 5px;
+  height: 0%;
+}
+
+.user-meta {
+  margin: 25px 0;
+}
+
+.user-meta span {
+  margin-top: 10px;
+  display: block;
+}
+
+.user-uploads {
+  border: 1px solid #dcdcdc;
+  flex: 1;
+  background: #fff;
+  margin-left: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-uploads * {
+  margin: 0.5%;
+  flex-basis: 32.33%;
+  overflow: hidden;
+  height: 300px;
+}
+
+.user-uploads *>img {
+  cursor: pointer;
+  transition: 300ms ease-in;
+}
+
+.user-uploads *>img:hover {
+  transform: scale(1.3) rotate(-2deg);
+}
+
+.winners-list {
+  width: 700px;
+  margin: 100px auto;
+  background: #fff;
+}
+
+.winners-list li {
+  display: flex;
+}
+
+.winners-list li * {
+  flex: 1;
+}
+
+.winners-list li:first-child {
+  background: yellow;
+  padding: 10px;
+}
+
+.winners-list li:not(:first-child) {
+  padding: 15px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+/* ChartJS styles */
+
+#chartContainer {
+  margin: 50px auto;
+}
+
+#image-gallery {
+  margin: 10px auto;
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn-start, .btn-end {
+  display: block;
+  width: 175px;
+  background: rgb(13, 186, 13);
+  margin: 10px auto;
+}
+
+.gallery-item {
+  position: relative;
+  flex-basis: 32.33%;
+  margin: 0.5%;
+  overflow: hidden;
+  height: 275px;
+}
+
+.gallery-item>img {
+  height: 100%;
+}
+
+.gallery-item .layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: 300ms ease-in-out;
+}
+
+.gallery-item:hover .layer, .layer.selected {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.gallery-item .layer>button {
+  width: 250px;
+  background: blue;
+}
+
+.gallery-item .layer>button.danger, button.danger {
+  background: #ff0000;
+}
+
+/* Upload Footer  */
+
+.upload-footer {
+  position: fixed;
+  width: 100%;
+  padding: 15px;
+  background: yellow;
+  bottom: 0;
+  max-height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.upload-footer label {
+  padding: 5px 15px;
+  color: #fff;
+  background: #222;
+  cursor: pointer;
+}
+
+.upload-footer span {
+  margin-left: 25px;
+}
+
+.progress-bar {
+  position: relative;
+  width: 300px;
+  background: #222;
+  height: 10px;
+  border-radius: 25px;
+  margin-left: auto;
+}
+
+.progress-bar i {
+  font-size: 12px;
+  display: block;
+  margin-top: 15px;
+  color: #222;
+}
+
+.progress {
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: 25px;
+  transition: 300ms ease-in;
+}
+
+
+
+/* disabled */
+
+*[disabled] {
+  cursor: no-drop;
+}

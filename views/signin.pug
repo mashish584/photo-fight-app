@@ -1,0 +1,13 @@
+extend layout
+block content
+  +navigation
+  .site-content
+    form(action='/signin' method="post")
+        img(src='logo.svg', alt='Photo Fight Application')
+        if(success)
+          span(style="text-align:center;display:block;margin:10px;")= success
+        if(error)
+          span(style="text-align:center;display:block;margin:10px;")= error
+        input(type='email', name='email', placeholder='Email')
+        input(type='password', name='password', placeholder='Password')
+        button.btn-submit(type='submit') Log In

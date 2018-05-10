@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="289" height="296">
+	<defs>
+		<clipPath id="clip_0">
+			<rect x="-9.9796" y="-8.3607941" width="311.93579" height="311.93579" clip-rule="evenodd"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip_0)">
+		<path fill="rgb(250,232,0)" stroke="none" transform="matrix(0.9966 0 0 0.9966 1.4813 0.608627)" d="M0 148C0 66.2618 64.6948 0 144.5 0C224.305 0 289 66.2618 289 148C289 229.738 224.305 296 144.5 296C64.6948 296 0 229.738 0 148Z"/>
+	</g>
+	<defs>
+		<clipPath id="clip_1">
+			<path d="M145.49 0.608627C65.9562 0.608627 1.4813 66.6452 1.4813 148.105C1.4813 229.566 65.9562 295.602 145.49 295.602C225.024 295.602 289.499 229.566 289.499 148.105C289.499 66.6452 225.024 0.608627 145.49 0.608627Z" clip-rule="evenodd"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip_1)">
+		<path fill="none" stroke="rgb(248,200,33)" stroke-width="22" stroke-miterlimit="4" transform="matrix(0.9966 0 0 0.9966 1.4813 0.608627)" d="M0 148C0 66.2618 64.6948 0 144.5 0C224.305 0 289 66.2618 289 148C289 229.738 224.305 296 144.5 296C64.6948 296 0 229.738 0 148Z"/>
+	</g>
+	<defs>
+		<clipPath id="clip_2">
+			<rect x="-9.9796" y="-8.3607941" width="311.93579" height="311.93579" clip-rule="evenodd"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip_2)">
+		<text fill="rgb(255,255,255)" stroke="none" transform="matrix(0.9966 0 0 0.9966 57.7892 36.4862)" font-size="144" font-family="Showcard Gothic" x="0" y="143">
+				P
+		</text>
+	</g>
+	<defs>
+		<clipPath id="clip_3">
+			<rect x="-9.9796" y="-8.3607941" width="311.93579" height="311.93579" clip-rule="evenodd"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip_3)">
+		<text fill="rgb(255,255,255)" stroke="none" transform="matrix(0.9966 0 0 0.9966 57.7892 36.4862)" font-size="72" font-family="Showcard Gothic" x="95.765625" y="143">
+				ic 
+		</text>
+	</g>
+	<defs>
+		<clipPath id="clip_4">
+			<rect x="-9.9796" y="-8.3607941" width="311.93579" height="311.93579" clip-rule="evenodd"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip_4)">
+		<text fill="rgb(255,255,255)" stroke="none" transform="matrix(0.996404 0.0197866 -0.0197866 0.996404 88.0134 190.312)" font-size="36" font-weight="bold" font-family="Gill Sans Ultra Bold" x="0" y="35.912109">
+				Fight
+		</text>
+	</g>
+</svg>

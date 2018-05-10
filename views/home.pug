@@ -1,0 +1,19 @@
+extend layout
+block content
+    +navigation
+    .site-content
+      .fight-section
+        if(images.length > 0)
+          each image in images
+            -var img = image.image
+            -var imgId = image._id
+            .fight-section--image
+              span.votes
+                i.fa.fa-user-o
+                |  #{image.votes.length}
+              img(src=img, alt='Pic 1')
+              if user
+                button.btn-vote(data-image=imgId) Vote
+        else
+           <h3>No competetion going on.</h3>
+

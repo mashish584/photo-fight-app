@@ -1,0 +1,24 @@
+extend layout
+block content
+    +navigation
+    .site-content
+      #chartContainer(style='height: 300px; width: 1000px;')
+      #buttonContainer
+        if !livePoll
+          button(class="btn-start" disabled) Start Live Poll
+        else
+          button(class="btn-end danger") Stop Live Poll
+      #image-gallery
+        if(gallery.length > 0)
+          each image in gallery
+            .gallery-item
+              -var img = image.image
+              -var imgId = image._id
+              img(src=img)
+              if !livePoll
+                .layer
+                  button(id="compete" data-image=imgId) Select Image for Competetion
+        else
+          span No uploads
+
+

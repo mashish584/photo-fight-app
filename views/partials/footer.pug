@@ -1,0 +1,14 @@
+if user && showUpload
+    .upload-footer
+        input#upload(type='file', name='upload')
+        label(for='upload')
+            i.fa.fa-upload
+            |  Upload
+        span Submit Image for upcoming competetion.
+        .progress-bar
+            i.load-text 0%
+            .progress
+script(src="https://js.pusher.com/4.1/pusher.min.js")
+script(src='https://canvasjs.com/assets/script/canvasjs.min.js')
+script(src="https://unpkg.com/axios/dist/axios.min.js")
+script(src='js/main.js')

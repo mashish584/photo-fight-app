@@ -1,0 +1,22 @@
+extend layout
+block content
+    +navigation
+    .site-content
+      .user-profile
+        .user-card
+          .user-image
+            img(src='http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-knives-ninja.png', alt='user')
+          .user-meta
+            h2= user.fullname
+            span
+              | Uploads :
+              i= user.gallery.length
+        .user-uploads
+          if (user.gallery.length > 0)
+            each image in user.gallery
+              -var img = image.image
+              -var fullname = user.fullname
+              div
+                img(src=img, alt=fullname)
+          else
+            span No Uploads

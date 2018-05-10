@@ -1,0 +1,21 @@
+extend layout
+block content
+    +navigation
+    .site-content
+      ul.winners-list
+        li
+          span Winner
+          span Competitor
+          span Points
+          span Winners Photo
+        if winners.length > 0
+          each winner in winners
+            li
+              span= winner.winner
+              span= winner.competitor
+              span= winner.points
+              span
+                a(href=winner.image style='text-decoration: underline' target="_blank") See Photo
+        else
+          li No winner
+

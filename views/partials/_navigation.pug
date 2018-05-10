@@ -1,0 +1,12 @@
+mixin navigation
+    .site-nav
+      a.brand(href='/home') Photo Fight Application
+      if user
+        if userMeta.role === 1
+          a(href='/admin') Admin
+        a(href='/profile') Profile
+        a(href='/winners') Winners
+        a(href='/signout') Sign Out
+      else
+        a(href='/signin') Sign In
+        a(href='/signup') Sign Up
