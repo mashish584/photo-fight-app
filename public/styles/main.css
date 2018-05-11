@@ -107,8 +107,12 @@ img {
   margin: 0 15px;
 }
 
+.nav-btn{
+  display: none;
+}
+
 .mobile-nav{
-  display: flex;
+  display: none;
   flex-direction: column;
   background: #fff;
   position: fixed;
@@ -400,6 +404,14 @@ form input {
 
   .site-nav{
      border-bottom: 2px solid rgba(0,0,0,0.1);
+  }
+
+  .mobile-nav{
+    display: flex;
+  }
+
+  .mobile-nav.active{
+    z-index: 1;
   }
 
   .site-nav a:not(:first-child){
