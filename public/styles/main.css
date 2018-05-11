@@ -77,6 +77,18 @@ img {
     Site NavBar Styles
 */
 
+#chartContainer{
+  width: 1000px;
+  height: 300px;
+}
+
+.site-content{
+  padding: 1px 0 0 0;
+  margin: -1px auto 0 auto;
+  transition: 100ms ease-in;
+}
+
+
 .site-nav {
   background: #fff;
   border-bottom: #dcdcdc;
@@ -93,6 +105,19 @@ img {
 
 .site-nav a:not(:first-child) {
   margin: 0 15px;
+}
+
+.mobile-nav{
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: -99;
+}
+.mobile-nav a{
+  padding: 10px;
+  border-bottom: 1px solid #f5f5f5;
 }
 
 /* Section-Content styles */
@@ -355,4 +380,95 @@ form input {
 
 *[disabled] {
   cursor: no-drop;
+}
+
+
+/*
+    Media Query for device less < 480px
+*/
+
+@media (max-width:480px){
+
+  body{
+      padding-bottom: 0;
+  }
+
+  .site-content{
+      height: 100vh;
+      background: #fff;
+  }
+
+  .site-nav{
+     border-bottom: 2px solid rgba(0,0,0,0.1);
+  }
+
+  .site-nav a:not(:first-child){
+      display: none;
+  }
+
+  .brand,
+  .nav-btn{
+      display: block;
+  }
+
+  .nav-btn{
+      font-size: 32px;
+  }
+
+  .fight-section{
+      width: 100%;
+  }
+
+  .fight-section--image img{
+      height: 150px;
+  }
+
+  .upload-footer label{
+      text-align: center;
+  }
+
+  #chartContainer{
+      width: 100%;
+      margin: 50px auto;
+  }
+
+  #image-gallery{
+      width: 100%;
+  }
+
+  .gallery-item{
+      flex-basis: 49%;
+  }
+
+  .winners-list{
+      margin: 0;
+      width: 100%;
+  }
+
+  .winners-list li{
+      font-size: 12px;
+  }
+
+  .user-profile{
+      padding: 0;
+      flex-direction: column;
+  }
+
+  .user-uploads,
+  .user-card{
+      margin: 0;
+      border: none;
+  }
+
+  .user-uploads *{
+      flex-basis: 49%;
+  }
+
+  .notification-flash{
+      width: 300px;
+      left: 50%;
+      bottom: 75%;
+      margin-left: -150px;
+  }
+
 }

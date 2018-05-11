@@ -1,5 +1,6 @@
 const chartContainer = document.querySelector("#chartContainer");
 const uploadBtn = document.querySelector("#upload");
+const navBtn = document.querySelector(".nav-btn");
 
 // Layer Button to add or remove images
 // from competetion
@@ -32,6 +33,24 @@ let dataPoints = [
 // initializing pusher API
 const pusher = new Pusher("5a2a7859d0010b12e72c", {
     cluster: "ap2"
+});
+
+/*
+    >=> Mobile Navigation Toggle
+*/
+
+navBtn.addEventListener("click", () => {
+    const mobileNav = document.querySelector(".mobile-nav");
+    const content = document.querySelector(".site-content");
+    // height of mobileNav
+    let navHeight = mobileNav.clientHeight;
+    if (mobileNav.classList.contains("active")) {
+        mobileNav.classList.remove("active");
+        content.style.transform = `translateY(0px)`;
+    } else {
+        mobileNav.classList.add("active");
+        content.style.transform = `translateY(${navHeight}px)`;
+    }
 });
 
 /*
