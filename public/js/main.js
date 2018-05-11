@@ -275,7 +275,7 @@ function startLivePoll() {
 */
 function stopLivePoll() {
     axios.post("/admin/competetion/stop").then(res => {
-        console.log(res);
+        location.reload();
     });
 }
 

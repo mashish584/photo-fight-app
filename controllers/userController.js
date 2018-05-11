@@ -137,6 +137,8 @@ exports.uploadPhoto = (req, res, next) => {
                     user: req.session.userId
                 };
                 let image = await new Gallery(body).save();
+                // update session data
+                req.session.user.gallery.unshift(image);
                 return res.status(200).json({
                     image,
                     message: "Image uploaded."
@@ -336,7 +338,7 @@ exports.startCompetetion = async (req, res, next) => {
             let { user } = img;
             triggerPusher(`user-${user._id}`, "notify", {
                 message: "Your photo is live for competetion.",
-                path: ""
+                path: "home"
             });
         });
 
